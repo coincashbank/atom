@@ -12,11 +12,11 @@ Order block decoration items in the DOM in a deterministic and controllable way.
 
 When multiple block decorations are created at the same screen line, they are inserted into the DOM in an order determined by the sequence of their creation; from oldest to newest when `position` is set to `"before"`, from newest to oldest when `position` is set to `"after"`. While this is deterministic, it is limited: it isn't possible to insert decorations within a sequence of existing ones, and it's difficult to control the order of decorations when creating and destroying and moving markers around an editor.
 
-We hit the need for this in [atom/github#1913](https://github.com/atom/github/pull/1913) when we have a block decoration for multiple consecutive collapsed file patches.
+We hit the need for this in [atom/github\#1913](https://github.com/atom/github/pull/1913) when we have a block decoration for multiple consecutive collapsed file patches.
 
 ## Explanation
 
-[TextEditor::decorateMarker()](https://atom.io/docs/api/v1.34.0/TextEditor#instance-decorateMarker) accepts an additional `order` parameter in its `decorationParams` argument when `type` is "block". When multiple block or overlay decorations occur at the same screen line, they are ordered within the DOM in increasing "order" value.
+[TextEditor::decorateMarker\(\)](https://atom.io/docs/api/v1.34.0/TextEditor#instance-decorateMarker) accepts an additional `order` parameter in its `decorationParams` argument when `type` is "block". When multiple block or overlay decorations occur at the same screen line, they are ordered within the DOM in increasing "order" value.
 
 Block decorations with the same `order` property are rendered in the order they were created, oldest to newest. Block decorations with no `order` property are rendered after those with one, in the order in which they were created, oldest to newest.
 
@@ -40,5 +40,6 @@ The alternative to having an explicit API for this is at all is to create and de
 
 ## Unresolved questions
 
-- Should overlay decorations respect an `order` parameter in a similar fashion?
-- Should screen column effect decoration ordering at all?
+* Should overlay decorations respect an `order` parameter in a similar fashion?
+* Should screen column effect decoration ordering at all?
+

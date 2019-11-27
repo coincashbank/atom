@@ -1,4 +1,4 @@
-## One Light UI theme
+# One Light UI theme
 
 A light UI theme that adapts to most syntax themes.
 
@@ -6,26 +6,23 @@ A light UI theme that adapts to most syntax themes.
 
 > The font used in the screenshot is [Fira Mono](https://github.com/mozilla/Fira).
 
+## Install
 
-### Install
+This theme comes bundled with Atom and can be activated by going to the **Settings &gt; Themes** section and selecting "One Light" from the **UI Themes** drop-down menu.
 
-This theme comes bundled with Atom and can be activated by going to the __Settings > Themes__ section and selecting "One Light" from the __UI Themes__ drop-down menu.
-
-
-### Settings
+## Settings
 
 In the theme settings you can:
 
-- Change the __Font Size__ to scale the whole UI up or down.
-- Choose between 3 __Tab Sizing__ modes.
-- Hide the  __dock buttons__.
+* Change the **Font Size** to scale the whole UI up or down.
+* Choose between 3 **Tab Sizing** modes.
+* Hide the  **dock buttons**.
 
 To make changes, go to `Settings > Themes > One Light UI > Settings` or the cog icon next to the theme picker.
 
+## Customize
 
-### Customize
-
-It's also possible to resize only certain areas by adding the following to your `styles.less` (Use DevTools to find the right selectors):
+It's also possible to resize only certain areas by adding the following to your `styles.less` \(Use DevTools to find the right selectors\):
 
 ```css
 .theme-one-light-ui {
@@ -35,8 +32,7 @@ It's also possible to resize only certain areas by adding the following to your 
 }
 ```
 
+## FAQ
 
-### FAQ
+**Why do the colors change when I switch Syntax themes.** This UI theme uses the same background color as the chosen syntax theme. If that syntax theme has a dark background color, it only uses its hue, but otherwise stays light. This lets you use light-dark combos.
 
-__Why do the colors change when I switch Syntax themes.__
-This UI theme uses the same background color as the chosen syntax theme. If that syntax theme has a dark background color, it only uses its hue, but otherwise stays light. This lets you use light-dark combos.

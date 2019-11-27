@@ -1,1 +1,4 @@
+# contributing
+
 ../CONTRIBUTING.md
+

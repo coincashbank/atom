@@ -9,12 +9,13 @@ Most of the Atom user and developer documentation is contained in the [Atom Flig
 Instructions for building Atom on various platforms from source.
 
 * Moved to [the Flight Manual](https://flight-manual.atom.io/hacking-atom/sections/hacking-on-atom-core/)
-    * Linux
-    * macOS
-    * Windows
+  * Linux
+  * macOS
+  * Windows
 
 ## Other documentation
 
-[Native Profiling on macOS](./native-profiling.md)
+[Native Profiling on macOS](native-profiling.md)
 
 The other documentation that was listed here previously has been moved to [the Flight Manual](https://flight-manual.atom.io).
+

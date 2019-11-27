@@ -15,4 +15,5 @@
   * Attach to this pid via the menu at the upper left corner of the Instruments profiler.
   * Click record, do your thing.
   * Click stop.
-  * The symbols should have been automatically located by Instruments (via Spotlight or something?), giving you a readable profile.
+  * The symbols should have been automatically located by Instruments \(via Spotlight or something?\), giving you a readable profile.
+
